@@ -5,10 +5,18 @@ import { heroTitles, heroStats, contact } from '../../data/content'
 import { useLanguage } from '../../context/LanguageContext'
 import VideoBackground from '../ui/VideoBackground'
 import BlueprintBackground from '../ui/BlueprintBackground'
+import { useState, useEffect } from 'react'
 
 export default function Hero() {
   const { lang } = useLanguage()
   const titles = heroTitles[lang]
+  const [videoReady, setVideoReady] = useState(false)
+
+  useEffect(() => {
+    const onReady = () => setVideoReady(true)
+    document.addEventListener('hero-video-ready', onReady as EventListener)
+    return () => document.removeEventListener('hero-video-ready', onReady as EventListener)
+  }, [])
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden pt-[72px]">
@@ -22,12 +30,12 @@ export default function Hero() {
       <BlueprintBackground className="z-[3]" />
       <div className="scan-overlay z-[4]" />
 
-      <div className="relative z-20 mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-5 lg:px-8 lg:py-24">
+      <div className="relative z-20 mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-5 lg:px-8 lg:py-24" style={{ opacity: videoReady ? 1 : 0 }}>
         <div className="lg:col-span-3">
           <p className="mb-4 font-mono text-sm text-cyan-400/60">
-            // SYSTEMS ENGINEER · MAGDEBURG, DE
+            SYSTEMS ENGINEER · MAGDEBURG, DE
           </p>
-          <h1 className="font-display text-[clamp(3rem,8vw,6rem)] font-black leading-none">
+          <h1 className="font-display text-[clamp(3rem,8vw,6rem)] font-black leading-none" style={{ transition: 'opacity 0.6s' }}>
             <motion.span
               className="block text-text-primary"
               initial={{ opacity: 0, y: 20 }}
@@ -64,7 +72,7 @@ export default function Hero() {
             </motion.span>
           </h1>
 
-          <div className="mt-6 font-mono text-lg text-cyber-teal">
+          <div className="mt-6 font-mono text-lg text-cyber-teal" style={{ transition: 'opacity 0.6s' }}>
             <span className="text-cyan-400/60">&gt; </span>
             <TypeAnimation
               sequence={titles.flatMap((t) => [t, 2000])}

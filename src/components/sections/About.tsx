@@ -13,7 +13,7 @@ export default function About() {
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <AnimatedSection>
           <p className="mb-4 font-mono text-sm text-cyan-400/60">
-            {lang === 'de' ? '// 01 — ÜBER MICH' : '// 01 — ABOUT ME'}
+            {lang === 'de' ? '01 — ÜBER MICH' : '01 — ABOUT ME'}
           </p>
           <h2 className="section-heading mb-6">
             {lang === 'de' ? 'Über mich' : 'About Me'}
@@ -44,14 +44,7 @@ export default function About() {
             ))}
           </div>
 
-          <div className="mt-8 flex gap-4">
-            {interests.map((interest) => (
-              <div key={interest.en} className="flex flex-col items-center justify-center gap-2 rounded-xl bg-cyber-panel/50 p-4 border border-cyan-400/20 text-text-secondary shadow-card hover:border-cyber-cyan transition-colors">
-                <span className="text-3xl">{interest.icon}</span>
-                <span className="font-mono text-xs">{lang === 'de' ? interest.de : interest.en}</span>
-              </div>
-            ))}
-          </div>
+          {/* Interests removed from About section to avoid duplication (displayed in Languages section) */}
         </AnimatedSection>
 
         <AnimatedSection delay={0.2} className="flex flex-col items-center">

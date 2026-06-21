@@ -24,8 +24,20 @@ export default function VideoBackground({
     video.playbackRate = 1
     const play = () => video.play().catch(() => setFailed(true))
     play()
-    video.addEventListener('canplay', play)
-    return () => video.removeEventListener('canplay', play)
+
+    const handleCanPlay = () => {
+      document.dispatchEvent(new CustomEvent('hero-video-ready'))
+    }
+
+    video.addEventListener('canplay', handleCanPlay)
+
+    // Fallback: reveal hero content if video doesn't fire canplay in time
+    const fallback = setTimeout(() => document.dispatchEvent(new CustomEvent('hero-video-ready')), 1500)
+
+    return () => {
+      video.removeEventListener('canplay', handleCanPlay)
+      clearTimeout(fallback)
+    }
   }, [src])
 
   if (failed) {
