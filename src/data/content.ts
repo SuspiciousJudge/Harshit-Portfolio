@@ -239,7 +239,6 @@ export const contact = {
   email: 'harshitshah92874@gmail.com',
   phone: '+49 15783454597',
   location: 'Magdeburg, Germany',
-  linkedin: 'https://www.linkedin.com/in/harshit-shah',
   linkedin: 'https://www.linkedin.com/in/harshit--shah/',
   github: 'https://github.com/Thruster55',
 }

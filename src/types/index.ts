@@ -46,6 +46,7 @@ export interface CourseItem {
   title: BilingualText
   issuer: string
   year?: string
+  certificate?: string
   bullets: BilingualText[]
 }
 
