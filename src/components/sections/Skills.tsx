@@ -13,9 +13,6 @@ export default function Skills() {
       <BlueprintBackground />
       <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
-          <p className="mb-4 font-mono text-sm text-cyan-400/60">
-            {lang === 'de' ? '02 — FERTIGKEITEN' : '02 — SKILLS'}
-          </p>
           <h2 className="section-heading mb-12">
             {lang === 'de' ? 'Technische Fertigkeiten' : 'Technical Skills'}
           </h2>

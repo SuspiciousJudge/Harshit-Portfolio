@@ -12,9 +12,6 @@ export default function About() {
     <section id="about" className="bg-cyber-dark py-24">
       <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <AnimatedSection>
-          <p className="mb-4 font-mono text-sm text-cyan-400/60">
-            {lang === 'de' ? '01 — ÜBER MICH' : '01 — ABOUT ME'}
-          </p>
           <h2 className="section-heading mb-6">
             {lang === 'de' ? 'Über mich' : 'About Me'}
           </h2>

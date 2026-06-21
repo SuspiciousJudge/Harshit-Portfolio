@@ -10,9 +10,6 @@ export default function Courses() {
     <section id="courses" className="bg-cyber-black py-20">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
-          <p className="mb-4 font-mono text-sm text-cyan-400/60">
-            {lang === 'de' ? '06 — KURSE' : '06 — COURSES'}
-          </p>
           <h2 className="section-heading mb-12">
             {lang === 'de' ? 'Kurse & Zertifikate' : 'Courses & Certifications'}
           </h2>

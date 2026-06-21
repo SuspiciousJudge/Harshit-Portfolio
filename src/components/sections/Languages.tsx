@@ -11,9 +11,6 @@ export default function Languages() {
     <section id="languages" className="bg-cyber-dark py-20">
       <div className="mx-auto max-w-[1200px] px-4 sm:px-6 lg:px-8">
         <AnimatedSection>
-          <p className="mb-4 font-mono text-sm text-cyan-400/60">
-            {lang === 'de' ? '07 — SPRACHEN & INTERESSEN' : '07 — LANGUAGES & INTERESTS'}
-          </p>
           <h2 className="section-heading mb-12">{lang === 'de' ? 'Sprachen' : 'Languages'}</h2>
         </AnimatedSection>
 
