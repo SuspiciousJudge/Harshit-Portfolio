@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { FaGraduationCap, FaCog, FaMapMarkerAlt } from 'react-icons/fa'
-import { aboutText, interests } from '../../data/content'
+import { aboutText } from '../../data/content'
 import { useLanguage } from '../../context/LanguageContext'
 import AnimatedSection from '../ui/AnimatedSection'
 
