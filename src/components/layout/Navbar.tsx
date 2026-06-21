@@ -46,18 +46,24 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <div className="flex overflow-hidden rounded-full border border-cyan-400/40">
-            {(['en', 'de'] as const).map((l) => (
-              <button
-                key={l}
-                type="button"
-                onClick={() => setLang(l)}
-                className={`px-3 py-1 font-mono text-xs uppercase transition-all ${
-                  lang === l ? 'bg-cyber-cyan font-bold text-cyber-black' : 'text-text-secondary'
-                }`}
-              >
-                {l}
-              </button>
-            ))}
+            <button
+              type="button"
+              onClick={() => setLang('en')}
+              className={`px-3 py-1 font-mono text-xs transition-all flex items-center gap-2 ${
+                lang === 'en' ? 'bg-cyber-cyan font-bold text-cyber-black' : 'text-text-secondary'
+              }`}
+            >
+              <span className="text-xs">🇬🇧</span> English
+            </button>
+            <button
+              type="button"
+              onClick={() => setLang('de')}
+              className={`px-3 py-1 font-mono text-xs transition-all flex items-center gap-2 ${
+                lang === 'de' ? 'bg-cyber-cyan font-bold text-cyber-black' : 'text-text-secondary'
+              }`}
+            >
+              <span className="text-xs">🇩🇪</span> Deutsch
+            </button>
           </div>
           <button type="button" className="text-cyber-cyan md:hidden" onClick={() => setOpen(!open)}>
             <HiMenuAlt3 size={24} />

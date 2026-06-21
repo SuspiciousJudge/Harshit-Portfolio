@@ -213,6 +213,7 @@ export const courses: CourseItem[] = [
     title: { en: 'Design of Control Systems using MATLAB and Simulink', de: 'Entwurf von Steuerungssystemen mit MATLAB und Simulink' },
     issuer: 'MathWorks',
     year: '2024',
+    certificate: '/certificate.pdf',
     bullets: [
       { en: 'Developed control loops using MATLAB and Simulink.', de: 'Entwickelte Regelkreise mit MATLAB und Simulink.' },
       { en: 'Implemented PID and lead-lag controllers.', de: 'Implementierte PID- und Vorhalt-Verzögerungs-Regler.' },
@@ -239,6 +240,7 @@ export const contact = {
   phone: '+49 15783454597',
   location: 'Magdeburg, Germany',
   linkedin: 'https://www.linkedin.com/in/harshit-shah',
+  linkedin: 'https://www.linkedin.com/in/harshit--shah/',
   github: 'https://github.com/Thruster55',
 }
 
