@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion'
-import { useInView } from '../../hooks/useInView'
+
 import type { LanguageItem } from '../../types'
 import { useLanguage } from '../../context/LanguageContext'
 

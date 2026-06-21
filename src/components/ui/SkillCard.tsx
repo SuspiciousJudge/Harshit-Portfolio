@@ -5,8 +5,7 @@ import { VscGraph } from 'react-icons/vsc'
 import { MdDeveloperBoard } from 'react-icons/md'
 import type { SkillCategory } from '../../types'
 import { useLanguage } from '../../context/LanguageContext'
-import ProgressBar from './ProgressBar'
-import RadialProgress from './RadialProgress'
+/* Progress components intentionally unused in this card — keep files if used elsewhere */
 
 const icons: Record<string, ComponentType<{ size?: number; color?: string }>> = {
   FaDraftingCompass,

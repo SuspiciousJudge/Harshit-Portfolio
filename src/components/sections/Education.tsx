@@ -6,9 +6,7 @@ import { useInView } from '../../hooks/useInView'
 
 export default function Education() {
   const { t, lang } = useLanguage()
-  const { ref, inView } = useInView(0.3)
-  const circumference = 2 * Math.PI * 36
-  const offset = circumference - 0.8 * circumference
+  const { ref } = useInView(0.3)
 
   return (
     <section id="education" className="bg-cyber-black py-24">
