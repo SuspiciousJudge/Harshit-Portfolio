@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0A0A0F"/>
+      <stop offset="100%" stop-color="#21262D"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg2)"/>
+  <g transform="translate(200,100)">
+    <rect x="0" y="60" width="80" height="120" rx="4" fill="rgba(0,255,200,0.15)" stroke="#00FFC8"/>
+    <rect x="100" y="60" width="80" height="120" rx="4" fill="rgba(0,255,200,0.15)" stroke="#00FFC8"/>
+    <rect x="200" y="60" width="80" height="120" rx="4" fill="rgba(0,255,200,0.15)" stroke="#00FFC8"/>
+    <rect x="300" y="60" width="80" height="120" rx="4" fill="rgba(0,255,200,0.15)" stroke="#00FFC8"/>
+    <path d="M40 60 L40 20 L320 20 L320 60" fill="none" stroke="#00D4FF" stroke-width="2"/>
+  </g>
+  <text x="400" y="380" text-anchor="middle" fill="#00FFC8" font-family="Orbitron,sans-serif" font-size="18">Battery Pack Design</text>
+  <text x="400" y="405" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="12">MATLAB · Simulink · Simscape Battery</text>
+</svg>

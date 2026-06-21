@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A0F"/>
+      <stop offset="50%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <g opacity="0.3" stroke="#00D4FF" fill="none">
+    <rect x="200" y="150" width="880" height="420" stroke-width="2"/>
+    <circle cx="640" cy="360" r="120" stroke-width="1"/>
+  </g>
+  <text x="640" y="360" text-anchor="middle" fill="#00D4FF" font-family="Orbitron,sans-serif" font-size="32" opacity="0.5">HERO VIDEO</text>
+</svg>

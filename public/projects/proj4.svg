@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <rect width="800" height="450" fill="#161B22"/>
+  <rect x="100" y="280" width="600" height="20" fill="#30363D"/>
+  <rect x="150" y="260" width="80" height="40" fill="rgba(0,212,255,0.2)" stroke="#00D4FF"/>
+  <rect x="360" y="260" width="80" height="40" fill="rgba(0,212,255,0.2)" stroke="#00D4FF"/>
+  <rect x="570" y="260" width="80" height="40" fill="rgba(0,212,255,0.2)" stroke="#00D4FF"/>
+  <circle cx="400" cy="150" r="50" fill="none" stroke="#F59E0B" stroke-width="2"/>
+  <text x="400" y="155" text-anchor="middle" fill="#F59E0B" font-family="monospace" font-size="14">PLC</text>
+  <text x="400" y="380" text-anchor="middle" fill="#00D4FF" font-family="Orbitron,sans-serif" font-size="18">Conveyor Control</text>
+  <text x="400" y="405" text-anchor="middle" fill="#8B949E" font-family="monospace" font-size="12">I/O Management · Ladder Logic</text>
+</svg>

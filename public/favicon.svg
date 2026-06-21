@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#0A0A0F"/>
+  <path d="M32 8 L36 18 L46 16 L48 26 L58 28 L56 38 L32 44 L8 38 L6 28 L16 26 L18 16 L28 18 Z" stroke="#00D4FF" stroke-width="2" fill="#161B22"/>
+  <text x="32" y="58" text-anchor="middle" fill="#00D4FF" font-family="monospace" font-size="10">HS</text>
+</svg>

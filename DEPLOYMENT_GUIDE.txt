@@ -1,0 +1,70 @@
+========================================
+PORTFOLIO DEPLOYMENT & MAINTENANCE GUIDE
+========================================
+
+Congratulations on finishing your portfolio! Follow these steps to host your website for free so anyone can see it, and learn how to update it later.
+
+--------------------------------------------------
+PART 1: PUSH YOUR CODE TO GITHUB
+--------------------------------------------------
+GitHub is where you will store your code. Vercel/Netlify will read from here to publish your website.
+
+1. Go to https://github.com and log in (or create a free account).
+2. Click the "+" icon in the top right corner and select "New repository".
+3. Name your repository (e.g., "harshit-portfolio"). Leave it "Public". Do not add a README, .gitignore, or license. Click "Create repository".
+4. Open your terminal in VS Code (Terminal -> New Terminal) inside your "harshit-portfolio" folder.
+5. Run the following commands one by one to push your code:
+
+   git init
+   git add .
+   git commit -m "Initial portfolio release"
+   git branch -M main
+   
+   (Copy the "git remote add origin" line from the GitHub page you just created, it looks like this:)
+   git remote add origin https://github.com/YourUsername/harshit-portfolio.git
+   
+   git push -u origin main
+
+Your code is now safely backed up on GitHub!
+
+--------------------------------------------------
+PART 2: DEPLOY FOR FREE TO VERCEL (RECOMMENDED)
+--------------------------------------------------
+Vercel is incredibly fast and optimized for frameworks like Vite and Next.js. Netlify works similarly, but Vercel is highly recommended.
+
+1. Go to https://vercel.com/ and click "Sign Up" or "Log In" using your GitHub account.
+2. Once on your Vercel Dashboard, click "Add New..." -> "Project".
+3. You will see a list of your GitHub repositories. Find "harshit-portfolio" and click "Import".
+4. Configure the Project:
+   - Framework Preset: Vercel should automatically detect "Vite".
+   - Build Command: npm run build
+   - Output Directory: dist
+   - Environment Variables: If you used EmailJS for the contact form, expand this section! Add your variables exactly as they are in your .env.local file:
+     Name: VITE_EMAILJS_SERVICE_ID       Value: (your service id)
+     Name: VITE_EMAILJS_TEMPLATE_ID      Value: (your template id)
+     Name: VITE_EMAILJS_PUBLIC_KEY       Value: (your public key)
+5. Click "Deploy". 
+6. Wait 1-2 minutes. Vercel will build the site and give you a free live URL (e.g., harshit-portfolio.vercel.app)!
+
+--------------------------------------------------
+PART 3: HOW TO MAKE FUTURE CHANGES
+--------------------------------------------------
+Whenever you want to add a new project, change some text, or update your CV:
+
+1. Open VS Code and open your "harshit-portfolio" folder.
+2. Run your local server to preview changes:
+   npm run dev
+3. Make your code changes (for example, edit src/data/content.ts or add a new photo to public/).
+4. Once you are happy with how it looks locally, stop the server (Ctrl + C) and save everything.
+5. In your terminal, run these three commands to send the updates to GitHub:
+
+   git add .
+   git commit -m "Added a new project and updated CV"
+   git push
+
+6. THAT'S IT! Because Vercel is connected to your GitHub, it will automatically detect the new push, rebuild your website in the background, and push the updates live to your URL within seconds. You don't need to touch Vercel again!
+
+--------------------------------------------------
+TIPS:
+- To add a custom domain name (like harshitshah.com), buy one from Namecheap or Google Domains, and go to your Vercel Project Settings -> Domains to connect it for free.
+- Keep your images optimized (under 500KB) and videos compressed to keep your website fast.
