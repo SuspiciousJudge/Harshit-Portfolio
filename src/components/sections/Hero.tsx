@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { TypeAnimation } from 'react-type-animation'
 import { HiOutlineMail, HiOutlinePhone, HiOutlineLocationMarker, HiChevronDown } from 'react-icons/hi'
-import { heroTitles, heroStats, contact } from '../../data/content'
+import { heroTitles, contact } from '../../data/content'
 import { useLanguage } from '../../context/LanguageContext'
 import VideoBackground from '../ui/VideoBackground'
 import BlueprintBackground from '../ui/BlueprintBackground'

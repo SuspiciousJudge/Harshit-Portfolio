@@ -4,7 +4,7 @@ $public = Join-Path $root "public"
 
 $maps = @(
   @("cv-en.pdf", "cv-en.pdf"),
-  @("cv-de.pdf", "cv-de.pdf"),
+  @("CV_n.pdf", "cv-de.pdf"),
   @("clip1.mp4", "clip1.mp4"),
   @("clip2.mp4", "clip2.mp4"),
   @("profile.jpg", "profile.jpg"),

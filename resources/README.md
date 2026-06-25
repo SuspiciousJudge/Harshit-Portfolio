@@ -7,7 +7,7 @@ Drop your media files here, then run the sync script to copy them into `public/`
 | File | Destination | Description |
 |------|-------------|-------------|
 | `cv-en.pdf` | `public/cv-en.pdf` | English resume (Download CV button) |
-| `cv-de.pdf` | `public/cv-de.pdf` | German resume |
+| `CV_n.pdf` | `public/cv-de.pdf` | German resume (new file name) |
 | `clip1.mp4` | `public/clip1.mp4` | Hero background video (engineering footage) |
 | `clip2.mp4` | `public/clip2.mp4` | Contact section space video |
 | `profile.jpg` | `public/profile.jpg` | Profile photo (square, min 400×400) |
