@@ -35,12 +35,7 @@ export const heroTitles = {
   ],
 }
 
-export const heroStats = [
-  { value: '3+', label: { en: 'Years Experience', de: 'Jahre Erfahrung' } },
-  { value: '10+', label: { en: 'Projects Completed', de: 'Projekte abgeschlossen' } },
-  { value: '5+', label: { en: 'CAD Tools Mastered', de: 'CAD-Tools beherrscht' } },
-  { value: '3', label: { en: 'Languages Spoken', de: 'Gesprochene Sprachen' } },
-]
+export const heroStats = []
 
 export const aboutText: BilingualText = {
   en: 'MSc student in Systems Engineering (Manufacturing) with CAD/FEM experience and a focus on digital engineering & design automation. Confident in standard-compliant documentation, technical analysis and configuration-oriented work; specifically targeting CATIA V5/DMU and KBE/Python in a targeted manner to reduce manual design effort and accelerate architecture/integration processes.',

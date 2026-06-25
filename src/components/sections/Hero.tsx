@@ -112,23 +112,6 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative lg:col-span-2">
-          <div className="grid grid-cols-2 gap-4">
-            {heroStats.map((stat, i) => (
-              <motion.div
-                key={stat.value}
-                className="glass-card hud-border p-5"
-                animate={{ y: [0, -12, 0] }}
-                transition={{ duration: 4, repeat: Infinity, delay: i * 0.4 }}
-              >
-                <div className="font-display text-3xl font-bold text-gradient-cyan">{stat.value}</div>
-                <div className="mt-1 text-xs text-text-secondary">
-                  {lang === 'de' ? stat.label.de : stat.label.en}
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 flex-col items-center animate-bounce">
