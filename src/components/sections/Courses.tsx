@@ -15,23 +15,19 @@ export default function Courses() {
           </h2>
         </AnimatedSection>
 
-        {/* Certificates list: show certificate names only with link */}
-        {courses.filter((c) => (c as any).certificate).length > 0 && (
+        {courses.filter((c) => c.certificate).length > 0 && (
           <AnimatedSection>
             <h3 className="mb-4 font-display text-sm font-semibold text-text-primary">{lang === 'de' ? 'Zertifikate' : 'Certificates'}</h3>
             <div className="mb-6 flex flex-col gap-3">
               {courses
-                .filter((c) => (c as any).certificate)
+                .filter((c) => c.certificate)
                 .map((c) => (
-                  <a
+                  <div
                     key={c.title.en}
-                    href={(c as any).certificate}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded border border-border-subtle bg-cyber-panel px-4 py-3 font-display text-sm text-cyber-cyan hover:bg-cyber-cyan/10"
+                    className="rounded border border-border-subtle bg-cyber-panel px-4 py-3 font-display text-sm text-cyber-cyan"
                   >
                     {t(c.title)}
-                  </a>
+                  </div>
                 ))}
             </div>
           </AnimatedSection>
@@ -39,7 +35,7 @@ export default function Courses() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {courses
-            .filter((c) => !(c as any).certificate)
+            .filter((c) => !c.certificate)
             .map((course, ci) => (
               <AnimatedSection key={course.title.en} delay={ci * 0.1}>
                 <motion.div
